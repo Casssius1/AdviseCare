@@ -1,9 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="10dp"
     tools:context=".Relief">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="16dp"
+        android:backgroundTint="@color/light_blue_400"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/rounded_corner">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Developer_name"
+            android:hint="HOW TO DEAL WITH MENTAL HELTH WHEN YOU CANCER"        android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginVertical="8dp"
+            android:padding="12dp"
+            android:textColor="@color/black">
+        </TextView>
+
+        <TextView
+            android:id="@+id/AboutDeveloper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:gravity="top"
+            android:hint="
+               A cancer diagnosis can have a significant impact on a person's mental health, and it is important to address these issues in addition to treating the physical aspects of the disease. Here are some ways to help people with cancer manage their mental health:
+
+Encourage open communication: Encourage the person with cancer to talk about their feelings, fears, and concerns. Listen actively and without judgment.
+
+Provide support: Offer emotional support, such as offering to accompany the person to appointments or just being present and available to listen.
+
+Connect with support groups: Help the person with cancer connect with support groups or counseling services. Support groups provide a safe space for people to share experiences and connect with others going through similar challenges.
+
+Encourage self-care: Encourage the person with cancer to engage in self-care activities that promote mental well-being, such as exercise, meditation, or spending time with loved ones.
+
+Address side effects: Treatment for cancer can cause side effects that impact mental health, such as fatigue, anxiety, and depression. Work with healthcare professionals to manage these symptoms and provide additional support as needed.
+
+Provide education: Provide information about the mental health impact of cancer and treatment, as well as resources for additional support.
+
+Respect autonomy: It is important to respect the person's autonomy and allow them to make their own decisions about their care and mental health support. Encourage them to communicate their needs and preferences with healthcare providers."
+
+            android:minLines="15"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textSize="20sp">
+
+        </TextView>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

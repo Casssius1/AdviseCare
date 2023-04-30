@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginVertical="16dp"
+        android:padding="10dp"
+        android:background="@drawable/rounded_corner"
+        tools:context=".ForgotPassword">
+
+        <ImageView
+            android:id="@+id/forgot_icon"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="32dp"
+            android:layout_marginTop="52dp"
+            android:background="@drawable/rounded_corner"
+            android:src="@drawable/baseline_person_24">
+
+        </ImageView>
+
+        <LinearLayout
+            android:id="@+id/hello_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/forgot_icon"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Awesome"
+                android:textColor="@color/colorprimary"
+                android:textSize="32dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Let's Reset "
+                android:textColor="@color/colorprimary"
+                android:textSize="32dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Password "
+                android:textColor="@color/colorprimary"
+                android:textSize="32dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/form_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hello_text"
+            android:layout_marginVertical="32dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/emailidforgot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/rounded_corner"
+                android:hint="emailId"
+                android:inputType="textEmailAddress"
+                android:padding="16dp"
+                android:textColorHint="@color/white"
+                android:textSize="20dp">
+
+            </EditText>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/ResetPasswordBtn"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginTop="12dp"
+                android:text="Reset Password"
+                android:textSize="16sp" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar2"
+                android:layout_width="24dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:visibility="gone"></ProgressBar>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

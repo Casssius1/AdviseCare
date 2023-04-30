@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/green"
-    tools:context="MainActivity"
-   >
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginVertical="16dp"
+        android:padding="10dp"
+        android:background="@drawable/rounded_corner"
+        tools:context=".MainActivityActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -34,7 +40,7 @@
             </ImageButton>
 
             <ImageButton
-                android:id="@+id/about_btn"
+                android:id="@+id/more_btn"
                 android:layout_height="36dp"
                 android:layout_width="36dp"
                 android:layout_alignParentEnd="true"
@@ -68,8 +74,8 @@
 
             <TextView
                 android:id="@+id/dashboard"
-                android:layout_width="170dp"
-                android:layout_height="164dp"
+                android:layout_width="104dp"
+                android:layout_height="154dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="20dp"
@@ -79,20 +85,19 @@
                 android:textSize="24sp" />
 
             <ImageView
-                android:layout_width="163dp"
-                android:layout_height="134dp"
+                android:layout_width="157dp"
+                android:layout_height="174dp"
                 android:layout_alignParentTop="true"
 
                 android:layout_alignParentEnd="true"
-                android:layout_marginStart="12dp"
+                android:layout_marginStart="7dp"
                 android:layout_marginLeft="200dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="6dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="-1dp"
                 android:layout_marginRight="50dp"
                 android:layout_toEndOf="@+id/dashboard"
                 android:adjustViewBounds="true"
-                android:maxWidth="520dp"
-                android:maxHeight="520dp"
+
                 android:src="@drawable/carelogo">
 
             </ImageView>
@@ -254,35 +259,54 @@
             </androidx.cardview.widget.CardView>
         </LinearLayout>
 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
 
-
-    </LinearLayout>
-    <ImageButton
-        android:id="@+id/contact_us"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@color/red"
-        android:src="@drawable/baseline_local_phone_24"
-        android:text="Contact Us"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/imgtv"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints">
-    </ImageButton>
     <TextView
         android:id="@+id/imgtv"
-        android:layout_width="166dp"
-        android:layout_height="34dp"
-        android:layout_margin="5dp"
+        android:layout_width="134dp"
+        android:layout_height="27dp"
+        android:layout_margin="10dp"
         android:text="Contact Us"
+        android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="16sp"
-        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <ImageButton
+            android:id="@+id/contact_us"
+            android:layout_margin="10dp"
+            android:layout_width="138dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/red"
+            android:background="@drawable/rounded_corner"
+            android:src="@drawable/baseline_local_phone_24"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+        </ImageButton>
+    <ImageButton
+        android:id="@+id/uploadbtn"
+        android:layout_margin="10dp"
+        android:layout_width="138dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/green"
+        android:background="@drawable/rounded_corner"
+        android:src="@drawable/baseline_upload_24"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+    </ImageButton>
+    </LinearLayout>
+    </LinearLayout>
 
+</RelativeLayout>
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,9 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="10dp"
     tools:context=".breastCancerActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="16dp"
+        android:backgroundTint="@color/colorprimary"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/rounded_corner">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Developer_name"
+            android:hint="WHAT IS BREASST CANCER AND HOW IS IT PREVENTED "
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginVertical="8dp"
+            android:padding="12dp"
+            android:textColor="@color/black">
+        </TextView>
+
+        <TextView
+            android:id="@+id/AboutDeveloper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:gravity="top"
+            android:hint=" Breast cancer is a type of cancer that develops in the breast tissue. It occurs when abnormal cells in the breast grow and divide uncontrollably, forming a mass or lump. Breast cancer can occur in both men and women, but it is much more common in women.
+
+The symptoms of breast cancer can vary, but some common signs include a lump in the breast or underarm, changes in breast size or shape, nipple discharge, or changes in the texture or appearance of the breast skin.
+
+Breast cancer can be diagnosed through a variety of tests, including mammograms, ultrasounds, and biopsies. Treatment options for breast cancer include surgery, radiation therapy, chemotherapy, hormone therapy, and targeted therapy. The specific treatment plan will depend on the type and stage of the breast cancer.
+
+Measures to prevent breast cancer include maintaining a healthy lifestyle, such as exercising regularly, maintaining a healthy weight, and limiting alcohol intake. Women are also encouraged to perform regular breast self-exams and to receive regular clinical breast exams and mammograms.
+
+
+  "
+            android:minLines="15"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textSize="20sp">
+
+        </TextView>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

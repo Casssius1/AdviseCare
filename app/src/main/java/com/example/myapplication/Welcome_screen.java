@@ -21,6 +21,6 @@ public class Welcome_screen extends AppCompatActivity {
                 finish();
 
             }
-        }, 1000);
+        }, 500);
     }
 }

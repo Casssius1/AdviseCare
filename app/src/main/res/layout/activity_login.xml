@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginVertical="16dp"
+        android:padding="10dp"
+        android:background="@drawable/rounded_corner"
+        tools:context=".LoginActivity">
+
+        <ImageView
+            android:id="@+id/log_in_icon"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="32dp"
+            android:src="@drawable/carelogo"
+            >
+        </ImageView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/log_in_icon"
+            android:id="@+id/hello_text"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hello."
+                android:textStyle="bold"
+                android:textSize="32dp"
+                android:textColor="@color/black">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome back "
+                android:textStyle="bold"
+                android:textSize="32dp"
+                android:textColor="@color/black">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/form_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hello_text"
+            android:layout_marginVertical="32dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/emailtv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/rounded_corner"
+                android:hint="emailId"
+                android:inputType="textEmailAddress"
+                android:padding="16dp"
+                android:textSize="20dp">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/passwordtv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+
+                android:background="@drawable/rounded_corner"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:padding="16dp"
+                android:textSize="20dp">
+
+
+            </EditText>
+
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/login_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:padding="10dp"
+                android:text="LogIn"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/forgotpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="@color/teal_200"
+                android:padding="10dp"
+                android:text="ForgotPassword"
+                android:textAlignment="center"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="24dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:visibility="gone"></ProgressBar>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

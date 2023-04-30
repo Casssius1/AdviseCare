@@ -4,9 +4,13 @@
     tools:ignore="ExtraText">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
+        android:usesCleartextTraffic="true"
         android:allowBackup="true"
+
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@drawable/iconimg"
@@ -15,8 +19,24 @@
         android:theme="@style/Theme.MyApplication"
         tools:ignore="ExtraText"
         tools:targetApi="31">
-
-
+        <activity
+            android:name=".About"
+            android:exported="false" />
+        <activity
+            android:name=".Settings"
+            android:exported="false" />
+        <activity
+            android:name=".UploadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorsSpace"
+            android:exported="false" />
+        <activity
+            android:name=".forgotPassward"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
         <activity
             android:name=".Create_Account"
             android:exported="false" />
@@ -44,7 +64,6 @@
         <activity
             android:name=".MainActivity"
             android:exported="true" />
-
     </application>
 
 </manifest>

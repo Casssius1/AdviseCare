@@ -1,9 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="10dp"
     tools:context=".prostateCancerActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="16dp"
+        android:backgroundTint="@color/colorprimary"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/rounded_corner">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Developer_name"
+            android:hint="WHAT IS PROSTATE CANCER AND HOW IS IT PREVENTED "
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginVertical="8dp"
+            android:padding="12dp"
+            android:textColor="@color/black">
+        </TextView>
+
+        <TextView
+            android:id="@+id/AboutDeveloper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:gravity="top"
+            android:hint="
+
+
+Prostate cancer is a type of cancer that develops in the prostate gland, which is a small gland located in the male reproductive system. Prostate cancer occurs when abnormal cells in the prostate gland grow and divide uncontrollably, forming a tumor.
+
+The symptoms of prostate cancer can vary, but some common signs include difficulty urinating, blood in the urine or semen, pain in the hips, back, or chest, and erectile dysfunction.
+
+Prostate cancer can be diagnosed through a variety of tests, including a digital rectal exam, a prostate-specific antigen (PSA) blood test, and a biopsy. Treatment options for prostate cancer include surgery, radiation therapy, chemotherapy, hormone therapy, and immunotherapy. The specific treatment plan will depend on the stage and severity of the cancer.
+
+Measures to prevent prostate cancer include maintaining a healthy lifestyle, such as exercising regularly, maintaining a healthy weight, and eating a balanced diet. Some studies suggest that consuming a diet high in fruits, vegetables, and whole grains, and low in red meat and dairy products may help to reduce the risk of prostate cancer. Additionally, regular prostate screenings can help to detect prostate cancer early, when it is most treatable.
+
+  "
+            android:minLines="15"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textSize="20sp">
+
+        </TextView>
+
+
+
+    </LinearLayout>
+
+</ScrollView>
